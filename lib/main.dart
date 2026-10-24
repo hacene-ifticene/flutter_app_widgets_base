@@ -16,10 +16,10 @@ class MainApp extends StatelessWidget {
             Text('Hello World!'),
             Text("Bienvenue a Boreal"),
             Container(
-              margin: EdgeInsets.all(20),
-              padding: EdgeInsets.all(16),
+              margin: EdgeInsets.all(26),
+              padding: EdgeInsets.all(23),
               decoration: BoxDecoration(
-                color: Colors.greenAccent,
+                color: Colors.teal,
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Text(
@@ -29,7 +29,7 @@ class MainApp extends StatelessWidget {
             ),
             Text("Tommy Ifticene"),
             Stack(
-              alignment: Alignment.topRight,
+              alignment: Alignment.bottomLeft,
               children: [
                 Container(width:200, height:200, color:Colors.blue[100]),
                 Icon(Icons.star, size:100, color: Colors.amber),
@@ -40,7 +40,7 @@ class MainApp extends StatelessWidget {
               ],
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Icon(Icons.home, color: Colors.blue, size: 40),
@@ -51,7 +51,7 @@ class MainApp extends StatelessWidget {
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text('Titre principal', style: TextStyle(fontSize: 26)),
                 SizedBox(height: 20),
